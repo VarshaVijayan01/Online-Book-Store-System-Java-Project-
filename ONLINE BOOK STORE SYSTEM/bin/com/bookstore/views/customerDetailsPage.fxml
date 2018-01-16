@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bookstore.controller.CustomerDetailsController">
+   <children>
+      <AnchorPane prefHeight="572.0" prefWidth="698.0">
+         <children>
+            <TableView fx:id="tableView3" layoutX="59.0" layoutY="66.0" prefHeight="200.0" prefWidth="580.0">
+              <columns>
+                <TableColumn fx:id="memberId" prefWidth="69.0" text="memberId" />
+                <TableColumn fx:id="name" prefWidth="90.0" text="name" />
+                  <TableColumn fx:id="gender" prefWidth="55.0" text="gender" />
+                  <TableColumn fx:id="contact" prefWidth="76.0" text="contact" />
+                  <TableColumn fx:id="address" prefWidth="131.0" text="address" />
+                  <TableColumn fx:id="shippingaddress" prefWidth="158.0" text="shipping address" />
+              </columns>
+            </TableView>
+            <Label layoutX="110.0" layoutY="289.0" text="Member Id" />
+            <Label layoutX="136.0" layoutY="324.0" text="Name" />
+            <Label layoutX="133.0" layoutY="361.0" text="Gender" />
+            <Label layoutX="133.0" layoutY="398.0" text="Contact" />
+            <Label layoutX="133.0" layoutY="439.0" text="Address" />
+            <Label layoutX="90.0" layoutY="471.0" text="Shipping Address" />
+            <TextField fx:id="txtMemberId" editable="false" layoutX="195.0" layoutY="285.0" />
+            <TextField fx:id="txtName" editable="false" layoutX="195.0" layoutY="320.0" />
+            <TextField fx:id="txtGender" editable="false" layoutX="195.0" layoutY="357.0" />
+            <TextField fx:id="txtContact" editable="false" layoutX="195.0" layoutY="394.0" />
+            <TextField fx:id="txtAddress" editable="false" layoutX="195.0" layoutY="435.0" />
+            <TextField fx:id="txtShipAddress" editable="false" layoutX="195.0" layoutY="467.0" />
+            <Button fx:id="btnUpdate" disable="true" layoutX="169.0" layoutY="502.0" mnemonicParsing="false" onAction="#updateRecords" text="Update" />
+            <Button fx:id="btnUpdateRecord" layoutX="203.0" layoutY="29.0" mnemonicParsing="false" onAction="#fillTextboxs" text="Update Record" />
+            <Button fx:id="btnDelete" layoutX="324.0" layoutY="29.0" mnemonicParsing="false" onAction="#removeCustomer" text="Delete" />
+            <Button layoutX="404.0" layoutY="29.0" mnemonicParsing="false" onAction="#homePage" text="Home Page" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

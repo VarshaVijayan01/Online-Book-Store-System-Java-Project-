@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bookstore.controller.MyController">
+   <children>
+      <AnchorPane layoutX="-16.0" layoutY="-18.0" prefHeight="404.0" prefWidth="516.0">
+         <children>
+            <Pane layoutX="23.0" layoutY="87.0" prefHeight="344.0" prefWidth="488.0">
+               <children>
+                  <PasswordField id="pwd1" fx:id="pwd1" layoutX="37.0" layoutY="131.0" promptText="PASSWORD" />
+                  <PasswordField id="pwd2" fx:id="pwd2" layoutX="302.0" layoutY="131.0" promptText="PASSWORD" />
+                  <TextField id="txt2" fx:id="txt2" layoutX="37.0" layoutY="77.0" promptText="USER NAME" />
+                 
+                  <TextField id="txt4" fx:id="txt4" layoutX="302.0" layoutY="77.0" promptText="USER NAME" />
+                 
+                  <RadioButton id="rd1" fx:id="rd1" layoutX="112.0" layoutY="23.0" mnemonicParsing="false" onAction="#ClickRadioButtons" text="ADMIN">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="rbd" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton id="rd2" fx:id="rd2" layoutX="291.0" layoutY="23.0" mnemonicParsing="false" onAction="#ClickRadioButtons" text="MEMBER" toggleGroup="$rbd" />
+                  <Button id="btn1" fx:id="btn1" layoutX="71.0" layoutY="184.0" mnemonicParsing="false" onAction="#btn1LoginAction" text="LOGIN" />
+                  <Button id="btn2" fx:id="btn2" layoutX="344.0" layoutY="184.0" mnemonicParsing="false" onAction="#btn2LoginAction" text="LOGIN" />
+                  <Button id="btn3" fx:id="btn3" layoutX="209.0" layoutY="255.0" mnemonicParsing="false" onAction="#btn3Action" text="REGISTER" />
+                  <Label layoutX="186.0" layoutY="228.0" text="Not yet Registered?" textFill="#eb1010f5">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="23.0" layoutY="37.0" prefHeight="50.0" prefWidth="488.0" text="ONLINE BOOK STORE SYSTEM">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
